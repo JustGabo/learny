@@ -15,7 +15,7 @@ export const Sidebar = ({className}: Props) => {
     <nav className={cn('h-full  lg:w-[256px] lg:fixed flex left-0 top-0 px-4 border-r-2 flex-col ', className)}>
       <Link href='/learn'>
       <article className="pt-8 pl-4 pb-7 flex items-center gap-x-3 ">
-        <Image src="/logo.svg" height={36} width={36} alt="Mascot" />
+        <Image src="/mascot.svg" height={36} width={36} alt="Mascot" />
           <h1 className="text-2xl font-extrabold text-green-500 tracking-wide">
             Learny
           </h1>
