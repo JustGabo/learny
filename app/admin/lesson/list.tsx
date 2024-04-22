@@ -1,0 +1,23 @@
+import React from "react";
+import {
+  List,
+  Datagrid,
+  TextField,
+  ReferenceOneField,
+  ReferenceField,
+  NumberField,
+} from "react-admin";
+
+export const LessonList = () => {
+  return (
+    <List>
+      <Datagrid rowClick="edit">
+        <TextField source="id" />
+        <TextField source="title" />
+        <TextField source="description" />
+        <ReferenceField source="unitId" reference="units" />
+        <NumberField source="order" />
+      </Datagrid>
+    </List>
+  );
+};
